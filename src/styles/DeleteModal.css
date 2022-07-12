@@ -1,0 +1,43 @@
+.del-container{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(41, 40, 40, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.del-box {
+    width: 35%;
+    height: 7rem;
+    background:rgb(213, 212, 212);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    padding: 35px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    animation-name: show;
+    animation-duration: 0.8s;   
+}
+
+.del-box h3 {
+    color: #2da4f8;
+}
+
+.del-box .input{
+    width: 100%;
+    margin: 0.8rem 0;
+}
+
+.del-box .input input{
+    width: 100%;
+}
+@keyframes show{
+    from{
+        top: -100px;
+    }
+    to {
+        transform: translate(-50%, -50%);
+    }
+}
